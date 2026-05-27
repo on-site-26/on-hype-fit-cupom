@@ -7,16 +7,19 @@
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { 
-            font-family: 'Segoe UI', sans-serif; 
-            min-height: 100vh; 
-            display: flex; 
-            flex-direction: column; 
+        body body {
+            font-family: 'Segoe UI', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
             align-items: center; 
-            justify-content: center;
+    /* Mude de 'center' para 'flex-start' */
+            justify-content: flex-start; 
+    /* Adicione um padding-top para controlar a altura */
+            padding-top: 50px;
             background: linear-gradient(135deg, #d8b4fe 0%, #bbf7d0 50%, #a7f3d0 100%);
             background-attachment: fixed;
-            padding: 20px;
+            padding-bottom: 20px;
             text-align: center;
         }
 
@@ -81,7 +84,7 @@
     <div id="modal" class="modal">
         <div class="modal-content">
             <h2 style="color: #7c3aed; margin-bottom: 15px;">Parabéns!</h2>
-            <p style="margin-bottom: 25px;">Você acaba de ganhar 10% de desconto em qualquer produto da <strong>ON HYPE FIT</strong>.</p>
+            <p style="margin-bottom: 25px;">Você acaba de ganhar 10% de desconto em qualquer combo da <strong>ON HYPE FIT</strong>.</p>
             <button class="btn btn-modal" onclick="enviarMensagem()">Quero meu cupom</button>
         </div>
     </div>
@@ -97,8 +100,8 @@
         }
 
         function enviarMensagem() {
-            const numero = "559991583550";
-            const mensagem = encodeURIComponent('Olá, vim garantir meu cupom de 10% de desconto "JULIANA10". Me envia as opções dos combos, quero garantir o meu combo com 10% OFF!');
+            const numero = "559988614132";
+            const mensagem = encodeURIComponent('Olá, vim garantir meu cupom de 10% de desconto "RAYSSA10%OFF". Me envia as opções dos combos, quero garantir o meu combo com 10% OFF!');
             window.open(`https://wa.me/${numero}?text=${mensagem}`, '_blank');
         }
     </script>
